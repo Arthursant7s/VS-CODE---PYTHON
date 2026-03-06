@@ -1,3 +1,6 @@
+
+Tabela de pesos
+
 import os 
 
 os.system("cls || clear")
