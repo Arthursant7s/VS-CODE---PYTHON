@@ -6,7 +6,7 @@ soma_notas = 0
 
 # Solicitar 3 notas 
 for i in range(1, 4):
-    nota = float(input(f"Digite a {i}° kota: "))
+    nota = float(input(f"Digite a {i}° nota: "))
     soma_notas += nota 
   
     # Calculando notas
