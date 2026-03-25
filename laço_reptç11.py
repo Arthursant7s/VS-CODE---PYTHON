@@ -1,4 +1,5 @@
 import os 
+import time
 
 os.system("cls || clear")
 
@@ -55,3 +56,7 @@ while True:
         case 3: 
             print("Saindo do programa...")
             break 
+    
+        case _:
+          print("\n Opção inválida. \n")
+          time.sleep(5)#Espera 5 segundos
