@@ -27,10 +27,20 @@ while True:
             menor_salrio = salario
 
     elif opcao == 2:
+        os.system("cls)
+        print("="40)
+        print("  RESULTADO FINAL DA PESQUISA  ")
+        print("="40)
+        
         if total_familias > 0:
             media_salario = soma_salario / total_familias
             media_filhos = soma_filhos / total_familias
+            
             print(f"\n Resultados: ")
             print(f"a) Total familias: {total_familias}")
-            print(f"Média filhos: ")
-            print(f"Maior Salario")
+            print(f"b) Média salarial: R$ {media_salario: .2f}")
+            print(f"c)Média filhos: {media_filhos: .1f}")
+            print(f"d)Maior Salario: {maior_salario: .2f")
+            print(f"e)Menor_salario: {menor_salario: .2f")
+        else:
+            print("Nenhuma familia cadastrada.")
