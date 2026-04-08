@@ -1,41 +1,48 @@
 import os
 os.system("cls")
 
-
 # Função sem parâmetros e sem retorno
 def logo():
     print("=======")
     print("  SENAI  ")
     print("=======")
 
-
 # Função com parâmetros e com retorno 
-def subtração(n1, n2):
-    return n1 - n2
+def somar(lista_numeros):
+    soma = lista_numeros[0] + lista_numeros[1]
+    return soma
 
 # Função com parâmetro e com retorno
-def soma(n1, n2):
-    return n1 + n2
+def subtrair(lista_numeros):
+    subtração = lista_numeros[0] - lista_numeros[1]
+    return subtração
 
-def multiplicar(n1, n2):
-    return n1 * n2
+def multiplicar(lista_numeros):
+    multiplicar = lista_numeros[0] * lista_numeros[1]
+    return multiplicar
 
-def divisão(n1, n2):
-    return n1 / n2
+def divição(lista_numeros):
+    divisão = lista_numeros[0] / lista_numeros[1]
+    return divisão
+
+lista_numeros = []
+QUANTIDADE_NUMEROS = 2
+
 
 print("= Solicitando dados =")
-n1 = int(input("Digite o primeiro número: "))
-n2 = int(input("Digite o segundo número: "))
-
-subtração = subtração(n1, n2)
-soma = soma(n1, n2)
-multiplicar = multiplicar(n1, n2)
-divisão = divisão(n1, n2)
-
 
 logo()
+print("= Solicitando dados =")
+for i in range(QUANTIDADE_NUMEROS):
+    numero = int(input(f"Digite o {i + 1}º número: "))
+    lista_numeros.append(numero)
+    
+soma = somar(lista_numeros)
+subtração = subtrair(lista_numeros)
+
+
 print("= Exibindo dados =")
 print(f"Subtração: {subtração}")
 print(f"Soma: {soma}")
-print(f"Multiplicação: {multiplicar}")
-print(f"Divisão: {divisão}")
+print(f"Multiplicação: {lista_numeros}")
+print(f"Divisão: {lista_numeros}")
